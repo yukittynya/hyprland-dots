@@ -10,9 +10,9 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
-export SUDO_PROMPT="password: "
-export TERMINAL="kitty"
-export BROWSER="thorium-browser-bin"
+export SUDO_PROMPT="passwd: "
+export TERMINAL="wezterm"
+export BROWSER="firefox"
 export VISUAL="nvim"
 export EDITOR="nvim"
 
