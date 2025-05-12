@@ -5,7 +5,7 @@
   "position": "top",
   "height": 40,
   "fixed-center": true,
-  "ipc": true,
+  "ipc": false,
   "margin-top": 10,
   "margin-left": 15,
   "margin-right": 15,
@@ -51,7 +51,7 @@
   "temperature": {
     "interval": 10,
     "tooltip": true,
-    "hwmon-path": ["/sys/class/hwmon/hwmon2/temp2_input"],
+    "hwmon-path": ["/sys/class/hwmon/hwmon1/temp1_input"],
     //"thermal-zone": 0,
     "critical-threshold": 82,
     "format-critical": "{temperatureC}°C {icon}",
