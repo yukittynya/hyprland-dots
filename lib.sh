@@ -28,21 +28,6 @@ install_nvchad() {
   git clone https://github.com/NvChad/starter ~/.config/nvim
 }
 
-install_eww() {
-  cd 
-  git clone https://github.com/elkowar/eww
-  cd eww 
-  cargo build --release --no-default-features --features=wayland
-}
-
-make_symlinks() {
-  cd
-  ln -s $HOME/.cache/wal/colors.css $HOME/.config/dunst/colors.css
-  ln -s $HOME/.cache/wal/colors.scss $HOME/.config/eww/bar/colors.scss
-  ln -s $HOME/.cache/wal/colors.scss $HOME/.config/eww/menu/colors.scss
-  ln -s $HOME/.cache/wal/colors.scss $HOME/.config/eww/music/colors.scss
-}
-
 install_sddm() {
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/keyitdev/sddm-astronaut-theme/master/setup.sh)"
 }
@@ -52,6 +37,7 @@ install_configs() {
 
   cd src 
   cp -r yukitty.png .config .wallpapers .zshenv $HOME/
+  cd ..
 
   install_nvchad
   install_sddm
