@@ -53,13 +53,8 @@ install_configs() {
   cd src 
   cp -r yukitty.png .config .wallpapers .zshenv $HOME/
 
-  sudo cp .config/rofi/launchers/type-6/launcher.sh /usr/local/bin/launch_rofi
-
-  wal -i $HOME/.wallpapers/three.png
-
   install_nvchad
-  install_eww
   install_sddm
 
-  make_symlinks
+  bash ~/.config/hypr/scripts/selectWallpaper.sh ~/.wallpapers/Lofi_Cat.png
 }

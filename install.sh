@@ -56,9 +56,9 @@ else
   echo "yay is already installed, skipping that oopsy"
 fi
 
-install_packages "${desktop_env}"
-install_packages "${dev_tools}"
-install_packages "${apps}"
-install_packages "${fonts}"
+install_packages "${desktop_env[@]}"
+install_packages "${dev_tools[@]}"
+install_packages "${apps[@]}"
+install_packages "${fonts[@]}"
 
 install_configs
